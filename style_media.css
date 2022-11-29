@@ -1,0 +1,247 @@
+/* The following classe are for @media only*/
+
+@media(max-width: 768px) {
+    .motto-container {
+        width: 25rem;
+        height: 15rem;
+    }
+
+
+    .motto-container h1 {
+        font-size: 1.5rem;
+    }
+
+
+    .mainBodyOrder {
+        flex-direction: column-reverse;
+    }
+
+
+    .mainBodyShoppingCart {
+        position: fixed;
+        flex-direction: column;
+        min-height: unset;
+        max-width: unset;
+        width: 100%;
+        bottom: -5px;
+        min-height: fit-content;
+    }
+}
+
+
+@media(max-width: 650px) {
+    .motto-container {
+        top: 20%;
+    }
+
+
+    .footer {
+        flex-direction: column-reverse;
+    }
+
+
+    .footer h1 {
+        margin: 0px;
+    }
+
+
+    .copyright {
+        padding: 15px 0px;
+    }
+}
+
+
+@media(max-width: 540px) {
+    .motto-container {
+        width: 20rem;
+        height: 10rem;
+        top: 15%;
+    }
+
+
+    .motto-container h1 {
+        font-size: 1.3rem;
+        margin: 0px;
+        padding-bottom: 10px;
+    }
+
+
+    .motto-container button {
+        font-size: 1rem;
+        width: 180px;
+        height: 38px;
+    }
+
+
+    .color-box {
+        display: none;
+    }
+
+
+    .polygon {
+        display: none;
+    }
+
+
+    .header-buttons {
+        display: none;
+    }
+
+
+    .categoryMenuList {
+        height: 40px;
+        justify-content: flex-start;
+        align-items: unset;
+        flex-direction: column;
+        overflow-y: scroll;
+    }
+}
+
+
+@media(max-width: 450px) {
+    .motto-container {
+        top: 12%;
+    }
+
+
+    .motto-container h1 {
+        font-size: 1.2rem;
+    }
+
+
+    .img_orderSection {
+        height: 150px;
+    }
+
+
+    .img_orderSection img {
+        height: 150px;
+    }
+
+
+    .mainBodyShoppingCart h2 {
+        margin: 0px;
+        padding-top: 5px;
+    }
+
+
+    .finalSumBox {
+        padding: 3px 3px;
+    }
+
+
+    .shoppingCartFinalPrice h3 {
+        font-size: 1.5rem;
+    }
+}
+
+
+@media(max-width: 350px) {
+    .motto-container {
+        top: 9%;
+        width: 15rem;
+        height: 7rem
+    }
+
+
+    .header {
+        padding: 0px
+    }
+
+
+    .logo h1 {
+        font-size: 1.5rem;
+        margin: 15px 0px;
+    }
+
+
+    .mainBodyShoppingCart h2 {
+        font-size: 1.5rem;
+    }
+
+
+    .mainBodyShoppingCart p {
+        font-size: 0.8rem;
+        margin: 2px;
+    }
+
+
+    .shoppingCartBox {
+        flex-direction: column;
+    }
+
+
+    .shoppingCartInfo {
+        display: flex;
+    }
+
+
+    .shoppingCartFinalPrice h3 {
+        font-size: 1.2rem;
+        margin: 0px;
+        padding: 5px 0px;
+    }
+
+
+    .shoppingCartFinalPrice button {
+        font-size: 1.1rem;
+        padding: 5px 0px;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+    }
+
+
+    .shoppingCartFinalPrice p {
+        font-size: 1rem;
+    }
+
+
+    .productBox h2 {
+        font-size: 1.2rem;
+        margin: 5px 0px;
+    }
+
+
+    .productBox p {
+        font-size: 1rem;
+        margin: 5px 5px;
+    }
+
+
+    .productBox button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25px;
+        height: 25px;
+    }
+
+
+    .productBox_right p {
+        white-space: nowrap;
+    }
+
+
+    .resumeCosts{
+        top:90%;
+    }
+
+
+    .footer {
+        padding: 3px 5px;
+    }
+
+
+    .footer h1 {
+        font-size: 1.5rem;
+    }
+
+
+    .footer a {
+        font-size: 0.8rem;
+    }
+    
+
+    .copyright {
+        padding: 5px 0px;
+    }
+}

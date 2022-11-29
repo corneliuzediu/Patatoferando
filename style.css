@@ -1,0 +1,465 @@
+/* Classes - full document coverage. */
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+}
+
+
+body button {
+    cursor: pointer !important;
+}
+
+
+.d-none {
+    display: none !important;
+}
+
+
+/* Header. */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 25px;
+    background-color: white;
+    height: inherit;
+}
+
+
+.logo button {
+    border: unset;
+    background-color: unset;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    color: #ff8000;
+}
+
+
+.logo button h1:hover {
+    color: #e47201;
+}
+
+
+.header-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    width: 150px;
+}
+
+
+.header-flag {
+    background-color: unset;
+    border: unset
+}
+
+
+.header-flag img:hover {
+    width: 66px;
+    transition: all 225 ease-in-out;
+}
+
+
+.header-menu {
+    background-color: unset;
+    border: unset
+}
+
+
+.header-menu img:hover {
+    width: 34px;
+    transition: all 225 ease-in-out;
+}
+
+
+/* Classes for Main Body */
+.mainBodyOrder {
+    display: flex;
+}
+
+
+/* Main Body - Open Page */
+.mainBodyPageOpener {
+    border: #ff8000;
+}
+
+
+.color-box {
+    background-color: #ff8000;
+    height: 5rem;
+}
+
+
+.polygon_svg {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+}
+
+
+.polygon {
+    fill: #ff8000;
+}
+
+
+.image_pageOpener {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.image_pageOpener img {
+    width: -webkit-fill-available;
+    object-fit: cover;
+}
+
+
+.motto-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 700px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+}
+
+
+.motto-container h1 {
+    margin-bottom: 42px;
+}
+
+
+.motto-container button {
+    background-color: #ff8000de;
+    border: 1px solid rgba(25, 25, 25, 0.5);
+    border-radius: 20px;
+    font-size: 18px;
+    color: beige;
+    width: 240px;
+    height: 48px;
+    transition: all 180ms ease-in-out;
+}
+
+
+.motto-container button:hover {
+    background-color: #e47201;
+    border: 1.5px solid rgba(25, 25, 25, 0.5);
+    transition: all 180ms ease-in-out;
+}
+
+
+/* Classes for Main Body - Order-Section */
+.mainBodyOrderSection {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+
+.img_orderSection {
+    height: 250px;
+}
+
+
+.img_orderSection img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.categoryMenuList{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap:10px;
+    height: 2em;
+    margin-inline: 10px;
+}
+
+
+.categoryMenuList div{
+    display: flex;
+    flex-grow: 1;
+
+}
+
+
+.categoryMenuList button {
+    flex-shrink: 1;
+    flex-grow: 1;
+    font-size: 18px;
+    height: 32px;
+    background-color: rgb(168, 205, 248);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    min-width: 95px;
+    transition: all 185ms ease-in-out;
+}
+
+
+.categoryMenuList button:hover {
+    background-color: rgb(117, 177, 245);
+}
+
+
+.productBox {
+    display: flex;
+    justify-content: space-between;
+    margin: 12px;
+    padding: 0px 24px;
+    border-radius: 20px;
+    border: 1px solid rgba(25, 25, 25, 0.2);
+}
+
+
+.productBox p {
+    font-size: 18px;
+    font-style: italic;
+}
+
+
+.productBox_right {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+}
+
+
+.productBox_right p {
+    font-size: 24px;
+    margin: 0;
+    white-space: nowrap;
+}
+
+
+.productBox_right button {
+    border: unset;
+    background-color: #ff8000ce;
+    border-radius: 20px;
+    width: 32px;
+    height: 32px;
+    transition: all 255ms ease-in-out;
+    font-size: 24px;
+}
+
+
+.productBox_right button:hover {
+    background-color: #e47201;
+    color: white;
+}
+
+
+/* Classes for the Shopping Cart */
+.mainBodyShoppingCart {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0px;
+    min-height: 100vh;
+    max-width: 300px;
+    background-color: rgb(255, 250, 244);
+    border: 2px solid #ff8000ce;
+    text-align: center;
+}
+
+
+.mainBodyShoppingCart h2 {
+    margin: 0px;
+}
+
+
+.shoppingCartBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5px;
+}
+
+
+.increaseOrDecrease {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5px;
+}
+
+
+.shoppingCartInfo {
+    padding-right: 10px;
+}
+
+
+.shoppingCartInfo h3 {
+    margin: 0;
+    padding-right: 10px;
+}
+
+
+.shoppingCartBox p {
+    margin: 0;
+    text-align: end;
+    width: 70px;
+    white-space: nowrap;
+}
+
+
+.shoppingCartBox button {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: #ff8000ce;
+    padding: unset;
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    transition: all 125ms ease-in-out;
+}
+
+
+.shoppingCartBox button:hover {
+    background-color: #e47201;
+    color: white;
+}
+
+
+.finalSumBox {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 20px;
+    font-weight: bolder;
+    font-size: 1.75rem;
+}
+
+
+.shoppingCartFinalPrice {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+
+.shoppingCartFinalPrice p {
+    margin: 0px;
+    font-size: 18px;
+    text-align: end;
+    font-weight: 400;
+}
+
+
+.shoppingCartFinalPrice h3 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+
+.shoppingCartFinalPrice button {
+    border: 4px solid rgba(255, 255, 255, 0.5);
+    background-color: #ff8000ce;
+    padding: 10px 15px;
+    transition: all 125ms ease-in-out;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    width: 100%;
+}
+
+
+.shoppingCartFinalPrice button:hover {
+    background-color: #e47201;
+}
+
+
+.minimizeShoppingCart {
+    position: fixed;
+    min-height: unset;
+    width: 100%;
+    top: 70%;
+}
+
+
+.mButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;    
+}
+
+
+.mButtons img{
+    object-fit: contain;
+    height: 20px;  
+}
+
+
+.mButtons button{
+    border: unset;
+    background-color: unset;
+}
+
+
+.resumeCosts{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    width: -webkit-fill-available;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+.resumeCosts h3{
+    font-size: 1.5rem;
+}
+
+
+/* Footer*/
+.footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    background-color: rgba(25, 25, 25, 0.5);
+    padding: 10px 15px;
+}
+
+
+.footer a {
+    color: black;
+    text-decoration-color: rgba(0, 0, 0, 0);
+}
+
+
+.footer a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration-color: white;
+    transition: all 180ms ease-in-out;
+}
+
+
+.logo-footer button {
+    border: unset;
+    background-color: unset;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    color: black;
+}
+
+
+.logo-footer button:hover {
+    color: rgb(255, 255, 255);
+    text-decoration-color: white;
+    transition: all 180ms ease-in-out;
+}

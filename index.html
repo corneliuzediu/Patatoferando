@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_media.css">
+    <script src="script.js"></script>
+    <script src="script_templates.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="icons/restaurant-32.ico">
+    <title>Patatoferando</title>
+</head>
+
+<body>
+    <!--Header-->
+    <div class="header">
+        <div class="logo"><button title="Patatoferando" type="button" onClick="window.location.reload();"><img
+                    src="icons/restaurant-48.ico">
+                <h1>Patatoferando</h1>
+            </button></div>
+        <div title="Display Only" class=" header-buttons">
+            <button class="header-flag"><img src="icons/germany_round_icon_64.png"></button>
+            <button class="header-menu"><img src="icons/menu-4-32.ico"></button>
+        </div>
+    </div>
+    <!--Main Body - Open Page-->
+    <div id="mainBodyPageOpener" class="mainBodyPageOpener">
+        <div class="color-box"></div>
+        <svg class="polygon_svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <polygon class="polygon" points="0 0, 0 100, 100 0, 100 0"></polygon>
+        </svg>
+        <div class="image_pageOpener">
+            <div class="motto-container">
+                <h1> "Dein Hunger sollte dich nicht kontrollieren!"</h1>
+                <button title="Jetz Bestellen" onclick="orderPageOpener(); selectFood(0)">
+                    <b>Jetzt Bestellen</b></button>
+            </div>
+            <img src="img/croissant.jpg">
+        </div>
+    </div>
+    <!--Main Body - Order Food-->
+    <div id="mainBodyOrder" class="mainBodyOrder d-none">
+        <!-- List of products available to order -->
+        <div id="mainBodyOrderSection" class="mainBodyOrderSection ">
+            <div class="img_orderSection">
+                <img id="imageSelector" src="">
+            </div>
+            <div class="categoryMenuList">
+                <div id="category-1"><button onclick="selectFood(0)">Vorspeise</button></div>
+                <div id="category-2"><button onclick="selectFood(1)">Hauptgericht</button></div>
+                <div id="category-3"><button onclick="selectFood(2)">Süßigkeiten</button></div>
+                <div id="category-4"><button onclick="selectFood(3)">Getränke</button></div>
+            </div>
+            <div>
+                <div id="selectorAppetizer" class="categorySelector d-none">Appetizer</div>
+                <div id="selectorMainDish" class="categorySelector d-none">Main Dish</div>
+                <div id="selectorSweets" class="categorySelector d-none">Sweets</div>
+                <div id="selectorDrinks" class="categorySelector d-none">Drinks</div>
+            </div>
+        </div>
+        <!-- List of products that have been added to the Shopping Cart -->
+        <div id="mainBodyShoppingCart" class="mainBodyShoppingCart d-none">
+            <div id="mainBodyShoppingCartResume" class="">
+                <div id="minimizeContainer" class="mButtons">
+                    <button id="minButton" class="minButton" onclick="minimizeShoppingCart()"><img
+                            src="icons/minimize-window-32.ico"></button>
+                </div>
+                <div id="titleAndContent" class="">
+                    <h2>Einkaufswagen</h2>
+                    <p>(Ab 25€ kostenlose Lieferung)</p>
+                    <div id="shoppingCartContent"></div>
+                </div>
+                <div id="finalSum" class="finalSumBox "></div>
+            </div>
+        </div>
+        <div id="resumeCosts" class="resumeCosts d-none">
+            <div class="mButtons"><button id="maxButton" class="mButtons maxButton"
+                    onclick="maximizeShoppingCart()"><img src="icons/window-32.ico"></button></div>
+            <div id="finalSumResume" class="finalSumBoxResume"></div>
+        </div>
+    </div>
+    <!--Footer-->
+    <div class="footer">
+        <div class="logo-footer"><button title="Patatoferando" type="button" onClick="window.location.reload();"><img
+                    src="icons/restaurant-32.ico">
+                <h1>Patatoferando</h1>
+            </button></div>
+        <div class="copyright"><a href=#top>@Copyright Patatoferando</a></div>
+        <div>
+            <div title="Display Only"><a href="#top">Impresum</a></div>
+            <div title="Display Only"><a href="#top">Datenschutz</a></div>
+            <div title="Display Only"><a href="#top">AGB</a></div>
+        </div>
+    </div>
+</body>
